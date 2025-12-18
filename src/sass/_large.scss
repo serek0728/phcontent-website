@@ -1,0 +1,239 @@
+@media (min-width: 992px) {
+	html {
+		scroll-padding-top: 80px;
+	}
+
+	.hamburger {
+		display: none;
+	}
+	.nav-desktop {
+		display: flex;
+	}
+	//
+	.header {
+		padding: 13em 5em 8em;
+		background-image: url('/dist/img/header-desktop.png');
+
+		&__box {
+			&-title {
+				font-size: 6.5rem;
+				margin-bottom: 1em;
+
+				span {
+					margin-top: 1em;
+					font-size: 3rem;
+				}
+			}
+
+			&-text {
+				margin-top: 2em;
+				font-size: 2.8rem;
+			}
+			&-btn {
+				margin-top: 0.5em;
+				font-size: 2.1rem;
+			}
+		}
+	}
+	//
+	.about-me {
+		&__img {
+			width: 500px;
+			height: 500px;
+		}
+		&__info {
+			font-size: 2.4rem;
+		}
+	}
+	//
+	.offers {
+		&__card {
+			&-img {
+				&-title {
+					font-size: 2.2rem;
+				}
+
+				&--first {
+					background-image: url('/dist/img/offers-1.png');
+				}
+
+				&--second {
+					background-image: url('/dist/img/offers-2.jpg');
+				}
+
+				&--third {
+					background-image: url('/dist/img/offers-3.jpg');
+				}
+				&--four {
+					background-image: url('/dist/img/offers-4.jpg');
+				}
+			}
+			&-info {
+				&-title {
+					font-size: 2.2rem;
+				}
+				&-list-item {
+					font-size: 1.6rem;
+				}
+				&-btn {
+					font-size: 1.6rem;
+				}
+			}
+		}
+	}
+	//
+	.cooperation {
+		&__boxes {
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			gap: 40px;
+		}
+
+		&__box {
+			width: 45%;
+			height: 800px;
+			background-image: url('/dist/img/background-section-desktop.png');
+
+			&--third {
+				margin: 0 auto;
+			}
+
+			&-title {
+				min-height: 140px;
+				font-size: 2.8rem;
+			}
+
+			&-icon {
+				i {
+					font-size: 10rem;
+				}
+			}
+		}
+	}
+
+	//
+	.social {
+		&__box {
+			height: 865px;
+		}
+
+		&__icon-box-fb {
+			display: block;
+		}
+		&__icon-box-ig {
+			display: block;
+		}
+	}
+
+	//
+	.contact {
+		background-image: url('/dist/img/background-form-desktop.jpg');
+		background-position: top;
+
+		.section-heading {
+			font-size: 4rem;
+		}
+
+		&__info-box {
+			&-title {
+				font-size: 3.4rem;
+			}
+			&-content {
+				font-size: 3rem;
+			}
+			&-icon {
+				i {
+					font-size: 4rem;
+				}
+				span {
+					font-size: 3rem;
+				}
+			}
+		}
+
+		&__form {
+			input,
+			textarea,
+			button {
+				font-size: 2rem;
+			}
+		}
+
+		&__box {
+			label {
+				font-size: 2.2rem;
+			}
+		}
+	}
+	//
+	.policy {
+		padding: 18em 1em 5em;
+	}
+	//
+	.not-found {
+		padding: 10em 1em 5em;
+
+		&__box {
+			width: 600px;
+			height: 600px;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.cooperation {
+		&__box-title {
+			font-size: 3rem;
+		}
+		&__box-text {
+			line-height: 25px;
+		}
+	}
+
+	.footer {
+		&__bottom-text {
+			font-size: 1.4rem;
+
+			&--right {
+				position: absolute;
+				right: 0;
+				color: $pure-white;
+				font-weight: 400;
+				transition: 0.4s color, font-size 0.4s, text-shadow 0.4s, font-weight 0.4s;
+
+				span {
+					color: $dark-blue;
+					transition: 0.4s color;
+				}
+
+				&::before {
+					position: absolute;
+					content: '';
+					top: 50%;
+					left: 10px;
+					transform: translateY(-50%);
+					height: 40%;
+					width: 1px;
+					text-align: center;
+					background-color: $pure-white;
+					transition: height 0.4s;
+				}
+				&:hover {
+					color: $dark-blue;
+					text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+					font-size: 1.6rem;
+					font-weight: bold;
+				}
+				&:hover span {
+					color: $pure-white;
+				}
+
+				&:hover::before {
+					height: 100%;
+				}
+			}
+		}
+	}
+}

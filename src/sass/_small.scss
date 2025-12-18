@@ -1,0 +1,38 @@
+@media (min-width: 480px) {
+	.offers {
+		&__card {
+			&-img {
+				&-title {
+					margin-top: 2em;
+				}
+			}
+			&-info {
+				&-title {
+					margin-top: 2em;
+				}
+			}
+		}
+	}
+
+	.cooperation {
+		&__box {
+			padding: 4em;
+
+			&-title {
+				margin-bottom: 2em;
+				font-size: 2rem;
+			}
+
+			&-text {
+				font-size: 1.6rem;
+			}
+		}
+	}
+
+	.not-found {
+		&__box {
+			width: 450px;
+			height: 450px;
+		}
+	}
+}

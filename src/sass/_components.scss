@@ -1,0 +1,79 @@
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+}
+
+.section-heading {
+	position: relative;
+	margin-bottom: 3em;
+	font-family: 'Playfair Display';
+	font-size: 2.2rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	color: $main-color;
+	letter-spacing: 10px;
+}
+
+.btn-special-animation {
+	position: relative;
+	transition: background-color 0.3s;
+	overflow: hidden;
+	z-index: 0;
+
+	&::before {
+		display: block;
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transform: scaleX(0);
+		transform-origin: right;
+		transition: transform 0.3s;
+		z-index: -1;
+	}
+
+	&:hover::before {
+		transform: scaleX(1);
+		transform-origin: left;
+	}
+}
+
+.hamburger {
+	position: absolute;
+	top: 2em;
+	transform: translateY(-50%);
+	opacity: 0.5;
+	z-index: 999;
+	cursor: pointer;
+
+	&-inner,
+	&-inner::before,
+	&-inner::after {
+		background-color: $main-color;
+		z-index: 500;
+	}
+}
+
+.submenu .hamburger {
+	&-inner,
+	&-inner::before,
+	&-inner::after {
+		background-color: $dark-blue;
+		z-index: 500;
+	}
+}
+
+@media (min-width: 768px) {
+	.section-heading {
+		font-size: 2.8rem;
+	}
+}
+@media (min-width: 992px) {
+	.section-heading {
+		font-size: 3.6rem;
+	}
+}
