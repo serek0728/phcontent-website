@@ -12,7 +12,7 @@
 	//
 	.header {
 		padding: 13em 5em 8em;
-		background-image: url('/dist/img/nowy\ header.png');
+		background-image: url('/dist/img/header-desktop.png');
 
 		&__box {
 			&-title {
@@ -202,7 +202,11 @@
 				right: 0;
 				color: $pure-white;
 				font-weight: 400;
-				transition: 0.4s color, font-size 0.4s, text-shadow 0.4s, font-weight 0.4s;
+				transition:
+					0.4s color,
+					font-size 0.4s,
+					text-shadow 0.4s,
+					font-weight 0.4s;
 
 				span {
 					color: $dark-blue;
