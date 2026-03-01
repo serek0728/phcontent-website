@@ -12,7 +12,7 @@
 	//
 	.header {
 		padding: 13em 5em 8em;
-		background-image: url('/dist/img/header-desktop.png');
+		background-image: url('/dist/img/nowy\ header.png');
 
 		&__box {
 			&-title {
@@ -76,6 +76,7 @@
 					font-size: 1.6rem;
 				}
 				&-btn {
+					display: block;
 					font-size: 1.6rem;
 				}
 			}
